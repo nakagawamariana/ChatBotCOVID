@@ -1,0 +1,76 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?", "Hello", "Good day", "Good morning"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later \\U0001F44B, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "jokes",
+         "patterns": ["Tell me a joke", "Do yoy know any joke?", "Can you be funny?", "Are you funny?", "Can you make me laugh?"],
+         "responses": ["Nothing like relaxing on the couch after a long day of being tense on the couch \\U0001F6CB", "I ran out of toilet paper and had to start using old newspapers. Times are rough \\U0001F4F0", "I'll tell you a coronavirus joke now, but you'll have to wait two weeks to see if you got it \\U0001F5D3"]
+        },
+        {"tag": "Chatbot",
+         "patterns": ["Who are you?", "Are you real?", "Are you a robot?", "Tell me about you", "What is this?", "Are you a human?", "Do you use artificial intelligence?", "What are you?", "Are you a person?"],
+         "responses": ["Okay... Do you promise to keep the secret? \\U0001F61C\n\nI'm a computer program that uses artificial intelligence to try to understand your questions and provide you with the right answer.\n\nSo no, I'm not a human but I'm real as long as bytes are.\n\nSometimes I can fail, that's why my creators are always looking for new ways to improve how my neurons connect to each other \\U0001F4A1\\U0001F9E0\\U0001F695"]
+        },
+        {"tag": "ChatbotName",
+         "patterns": ["What's your name?", "What is this chatbot name", "Tell me your name", "What is your name?"],
+         "responses": ["My name is Cova"]
+        },
+        {"tag": "ChatbotAge",
+         "patterns": ["How old are you?", "Tell me your age", "Say your age"],
+         "responses": ["I can't tell you my age, it changes everyday \\U0001F60E"]
+        },
+        {"tag": "ChatbotMood",
+         "patterns": ["How are you?", "How are you doing", "Are you okay?", "What are you doing?", "What do you do?", "What's up?"],
+         "responses": ["I'm well, thanks!", "Pretty good, thanks!"]
+        },
+        {"tag": "ChatbotHelp",
+         "patterns": ["Can you help me?", "Help me please", "I need help", "Could you help", "Help"],
+         "responses": ["Of course, tell me what you need"]
+        },
+        {"tag": "ContactCovid",
+         "patterns": ["I've had contact with a positive", "I had contact with a positive", "What to do if contact with a covid positive", "My friend is positive", "A family member is positive", "A person in my workplace is positive", "My friend has covid", "My friend has corona", "A family member has corona", "A workmate has corona", "I've been in touch with a positive", "I made contact with a positive", "I've in contact with a person who has coronavirus", "I've been in contact with someone who has covid-19", "I've been in contact with a person with corona", "I met a positive"],
+         "responses": ["In case you have been in contact with someone with suspicion or confirmation of Covid-19, you have to quarantine for at least 10 days from the last contact. Watch your symptoms during the quarantine and also during the 4 days after it ends \\U0001F575 If you have symptoms, call your health center or the Covid phone number of your autonomous community. You can ask me for the Covid phone of your community \\U0001F4DE\\U0001F9A0\n\nThe COVID-19 virus can be transmitted from two days before the onset of symptoms. It can also be transmitted from asymptomatic people. Even if a diagnostic test is performed at the beginning of the quarantine period and it is negative, it is important to continue the quarantine period until the end, since symptoms of the disease may appear after the result of the diagnostic test and during the entire period of quarantine.\n\nIf you live with more people, you should be isolated only in a single room in your house \\U0001F9CD\\U0001F6AA. If possible, you should use a bathroom exclusively for yourself \\U0001F6B9\\U0001F6BD\\U0001F6C1. If this is not possible, you must disinfect it with bleach after each use \\U0001F9FC. You should avoid leaving the room and, when strictly necessary, you should use a surgical mask and perform hand hygiene before leaving (with soap and water or hydroalcoholic solution)."]
+            }, 
+    {"tag": "CovidTelephone",
+         "patterns": ["Which is the Covid telephone in my autonomous community", "What is the Covid phone number from", "Which is the Covid telephone of", "What is the Covid-19 telephone from", "Which is the Covid phone number of", "What is the coronavirus telephone of", "Who can I call?", "I need to call someone", "What is the covid number of", "Give me the number of", "The number of", "The covid phone number of", "I need the telephone number from", "Could you give me the telephone number from", "I need a phone number", "Tell me the covid phone from", "Tell me the covid number of", "Covid-19 phone", "Covid phone", "Covid telephone"],
+         "responses": ["It's important to not to collapse emergency phone lines. If you only need information, you should call the Covid phone number provided by your autonomous community.\n\n\\U0001F198\\U0000260E Just in case of emergency, call 112. "]
+    }, 
+    {"tag": "CovidWhatis",
+         "patterns": ["What is Covid-19?", "What is the coronavirus?", "How is the coronavirus?", "Give me information about Covid", "Give me information about the coronavirus", "What is SARS-CoV-2?", "What is corona?"],
+         "responses": ["\\U0001F9A0 Coronaviruses are a broad family of viruses that can cause infection in humans and a variety of animals (birds and mammals). Sometimes they can be transmitted from animals to people.\n\nThe SARS-CoV-2 coronavirus is a new type of coronavirus and causes the COVID-19 disease. Transmission occurs by direct contact of the mucous membranes of the nose, eyes or mouth with the respiratory drops that a sick person emits when coughing or sneezing \\U0001F5E3\\U0001F4A6\n\nIt is therefore important to maintain a minimum safety distance of 2 m \\U0001F9CD\\U000025AB\\U000025AB\\U0001F9CD\n\n\\U0001F534 Current evidence on the COVID-19 disease shows that there is transmission of the infection from asymptomatic cases or cases in the presymptomatic phase."]
+    }, 
+    {"tag": "CovidTransmission",
+         "patterns": ["How is Covid-19 transmitted?", "How does the coronavirus spread?", "How is the transmission of Covid", "Give me information about coronavirus transmission", "How does the virus transmit?", "How can you get infected?", "How do you get infected with covid?", "Can you catch the Covid-19 by touching a surface?", "Transmission of coronavirus"],
+         "responses": ["Current evidence suggests that the main way of transmission occurs by direct contact of the mucous membranes of the nose, eyes or mouth with the respiratory drops that a sick person emits when coughing, sneezing, speaking or singing \\U0001F5E3\\U0001F4A6\n\nThis way of transmission is known as aerosol transmission and is more likely to happen when people are in direct or close contact (less than 1 metre appart) with an infected person. It is therefore important to maintain a minimum safety distance of 2 m \\U0001F9CD\\U000025AB\\U000025AB\\U0001F9CD\n\nAerosol transmission can occur in specific settings, particularly indoor, crowded and inadequately ventilated spaces, where people spend together long periods of time. Choose open spaces and keep a good ventilation \\U0001F3DE\\U0001F4A8\n\nThe virus can also spread after infected people sneeze, cough on, or touch surfaces. Other people may become infected by touching these surfaces, then touching their eyes, noses or mouths without having cleaned their hands first. You should wash your hands frequently \\U0001F9F4\\U0001F932 and use a mask \\U0001F637\n\nBe careful! Current evidence on the COVID-19 disease shows that there is transmission of the infection from asymptomatic cases or cases in the presymptomatic phase.\n\nIn any case, stay home if you present any symptom or if you have to quarantine \\U0001F3E0"]
+    }, 
+     {"tag": "CovidSymptoms",
+         "patterns": ["Which are the coronavirus symptoms?", "What are the symptoms of coronavirus?", "Tell me the symptoms of coronavirus", "Covid symptoms", "Coronavirus symptoms", "What are the most common symptoms", "What are the symptoms?", "Which are the symptoms?", "Corona symptoms", "Covid-19 symptoms"],
+         "responses": ["It's important to note that Covid-19 affects in different ways depending on each person.\n\nHowever, the most common symptoms are:\n\\U00002714 Fever\n\\U00002714 Cough \n\\U00002714 Shortness of breath\n\nOther less common symptoms are:\n\\U00002714 Decreased smell and taste\n\\U00002714 Chills\n\\U00002714 Sore throat\n\\U00002714 Muscle aches\n\\U00002714 Headache\n\\U00002714 General weakness\n\\U00002714 Diarrhea or vomiting\n\\U00002714 Poor being generalized\n\nOn average it takes 5-6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days."]
+    },
+    {"tag": "CovidSymptomsON",
+         "patterns": ["I have symptoms", "have symptoms", "has symptoms", "I feel bad", "I don't feel well", "Shortness of breath", "can't breath well", "It is difficult to breath", "have fever", " temperature is high", " temperature is above", " temperature is below", "have cough", "smell", "taste", "have chills", "have sore throat", "have muscle aches", "have headache", "feel general weakness", "have diarrhea", "vomitting", "poor being", "feel bad", "don't feel well", "feel sick", "feel ill", "have symptoms", "What can I do if I have symptoms?", "What should you do in case of having symptoms?"],
+         "responses": ["It's important to note that Covid-19 affects in different ways depending on each person.\n\nIf you have fever, cough, shorthness of breath or other symptoms, you should follow these recommendations:\n\n\\U0001F3E0 Isolate yourself at home\nIf you live with more people, you should be isolated only in a single room in your house. If possible, you should use a bathroom exclusively for yourself. If this is not possible, you must disinfect it with bleach after each use. You should avoid leaving the room and, when strictly necessary, you should use a surgical mask and perform hand hygiene before leaving (with soap and water or hydroalcoholic solution).\n\n\\U0001f575 Watch your symptoms\nIf you have a feeling of shortness of breath or a feeling of gravity due to any other symptom, call 112.\n\n\\U0001F4DE Call your health center or the Covid phone number of your autonomous community. You can ask me for the Covid phone of your community\n\n\\U00002764 Take care of your health\nUse acetaminophen to control fever, put wet cloths on your forehead or take a warm shower to help control fever, drink fluids, rest but move around the room from time to time.\n\nYou can ask me if you have any doubt about isolation , protection measures or Covid-19 telephone numbers."]
+    },
+    {"tag": "CovidSymptomsOFF",
+         "patterns": ["I feel good", "I don't have symptoms", "do not have symptoms","don't have symptoms", "no symptoms", "I feel okay", "I feel well", "I feel healthy", "I have no symptoms", "don't have fever", "can breathe", "don't cough","What to do if I don't have symptoms"],
+         "responses": ["\\U00002139It's important to note that Covid-19 affects in different ways depending on each person.\n\nIt's possible that a person infected with Covid-19 does not present any symptom, or only has mild symptoms. However, this person can spread the virus and infect other people.\n\nMoreover, it takes 5-6 days on average from when someone is infected with the virus for symptoms to show. It can even take up to 14 days."]
+    }, 
+    {"tag": "CovidQuarantine",
+         "patterns": ["What is quarantine?", "What is isolation?", "How long is the quarantine?", "How do I isolate?", "How do you quarantine?", "Could you explain what quarantine is?", "Give me information about quarantine", "Tell me more about isolation", "What is home isolation?"],
+         "responses": ["\\U00002139What is quarantine?\nIt is a public health measure to control the transmission of the COVID-19 virus. It is indicated so that people who have been exposed to the virus do not have contact with other people during the period in which they can develop and transmit the infection.\n\n\\U0001F3E0What is quarantine about?\nThe recommended measures, as far as possible, are to remain alone in a room of the house for as long as possible, have your own bathroom and wear a surgical mask whenever you need to leave the room. In this case, the cohabitants must also wear a surgical mask. Nor should you leave your home during quarantine.\n\n\\U0001F4C5How long is the quarantine?\n10 days from the last contact with the confirmed case. The quarantine is 10 days because most people develop symptoms in the first 10 days after being exposed to a case of COVID-19. Watch for symptoms during the quarantine and also during the 4 days after it ends.\n\n\\U00002757Why is so important to keep quarantine?\nThe COVID-19 virus can be transmitted from two days before the onset of symptoms. It can also be transmitted from asymptomatic people. Even if a diagnostic test is performed at the beginning of the quarantine period and it is negative, it is important to continue the quarantine period until the end, since symptoms of the disease may appear after the result of the diagnostic test and throughout the entire period of quarantine."]
+    },
+    {"tag": "CovidMeasures",
+         "patterns": ["Protection measures", "How can I protect from the virus?", "What are the protection measures against Covid-19", "What can I do to protect myself from coronavirus?", "What to do to avoid infection", "What to do to avoid Covid"],
+         "responses": ["\\U0001F91D\\U0001F9FC\\U00002728 Wash your hands frequently.\n\n\\U0001F637 Wear a mask.\n\n\\U0001F645 Avoid touching your eyes, nose and mouth. When coughing, cover your mouth and nose with your elbow.\n\n\\U0001F9CD\\U000025AB\\U000025AB\\U0001F9CD Keep a distance of, at least, 1.5 m with other people. Limit your contacts.\n\n\\U0001F3DE Prioritize open spaces.\n\n\\U0001FA9F Ventilate closed spaces frequently.\n\n\\U0001F3E0 Stay at home if you have any symptoms or if you have to quarantine."]
+    }
+]
+}
