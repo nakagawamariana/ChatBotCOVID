@@ -18,7 +18,7 @@ toktoktoken = ToktokTokenizer()
 
 # things we need for Tensorflow
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 import random
 
 
@@ -28,17 +28,17 @@ from keras.models import Sequential
 from keras.layers import Dense
 
 # things we need for the conversation 
-import emoji
+#import emoji
 from termcolor import colored
-from gingerit.gingerit import GingerIt
+#from gingerit.gingerit import GingerIt
 import numpy as np
 #%%
 #Import training data
-with open('new_intent.json', 'r') as f:
+with open('new_intent.json', 'rb') as f:
     intents = json.load(f)
     
 #Autonomous community telephone numbers
-with open('comunidades_autonomas.json') as o:
+with open('comunidades_autonomas.json','rb') as o:
     ca = json.load(o)
     
 #%%
