@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name ="viewport" content = "width=device-width, initial-scale = 1.0">
+        <script src = "java.js"></script>
+        <link rel = "stylesheet" href = "mystyle.css">
+    </head>
+    <body>
+        <i class="icon ion-home"></i>
+        <div class = "chatbox">
+            <button class="open_button" onclick="openchat()"></button>
+            <div class = "chatbox_support" id="chatbox_support">
+                <div class = "chatbox_header">
+                    <img src="icon.png" class="icon_chat">
+                    <div class="circle"></div>
+                    <div class="circle_opaque"></div>
+                    <p id= "live_chat">Live chat with Cova</p>
+                    <p id= "ask_chat">Ask anything</p>
+                    <button id="close_chat" onclick="closechat()"></button>
+                </div>
+                <div class = "chatbox_bottom">
+                    <input type="text" class="input_user" id="input_user" placeholder="Type your message">
+                    <button class="btn"  id="myBtn">
+                    </button>
+                </div>
+                <div class="chat_msg" id="chat_msg">
+
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
