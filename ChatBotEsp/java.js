@@ -7,7 +7,7 @@ function send_message() {setTimeout(function(){
 
 function write_response(){setTimeout(function(){
     var div = document.createElement('div');
-
+    alert(chatBot(document.getElementById('input_user').value))
     div.textContent = chatBot(document.getElementById('input_user').value);
     div.setAttribute('class', 'msg_in');
     document.getElementById('chat_msg').appendChild(div)
@@ -37,7 +37,8 @@ function chatBot(input) {
 
 	// current user input
 
-	respondTo(input)
+	var answer =respondTo(input)
+
 	/**
 	 * respondTo
 	 * 
@@ -51,30 +52,30 @@ function chatBot(input) {
 	function respondTo(input) {
 
 		input = input.toLowerCase();
-		alert(match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)', input))
+		
 		if(match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)', input))
 			return "um... hi?";
-		/**
-		if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you'))
+		
+		if(match('what[^ ]* up',input) || match('sup',input) || match('how are you',input))
 			return "this github thing is pretty cool, huh?";
 		
-		if(this.match('l(ol)+') || this.match('(ha)+(h|$)') || this.match('lmao'))
+		if(match('l(ol)+',input) || match('(ha)+(h|$)',input) || match('lmao',input))
 			return "what's so funny?";
 		
-		if(this.match('^no+(\\s|!|\\.|$)'))
+		if(match('^no+(\\s|!|\\.|$)'), input)
 			return "don't be such a negative nancy :(";
 		
-		if(this.match('(cya|bye|see ya|ttyl|talk to you later)'))
+		if(match('(cya|bye|see ya|ttyl|talk to you later)', input))
 			return ["alright, see you around", "good teamwork!"];
 		
-		if(this.match('(dumb|stupid|is that all)'))
+		if(match('(dumb|stupid|is that all)', input))
 			return ["hey i'm just a proof of concept", "you can make me smarter if you'd like"];
 		
-		if(this.input == 'noop')
+		if(input == 'noop')
 			return;
-		
+				
 		return input + " what?"; 
-		*/
+
 	}
 	
 	/**
@@ -84,9 +85,11 @@ function chatBot(input) {
 	 * @return boolean - whether or not the input string matches the regex
 	 */
 	function match(regex,input) {
-	
+    	
 		return new RegExp(regex).test(input);
 	}
+	
+	return answer;
 }
 
 /* 
