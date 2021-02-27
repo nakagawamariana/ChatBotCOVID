@@ -1,3 +1,6 @@
+
+
+
 function send_message() {setTimeout(function(){
     var div = document.createElement('div');
     div.textContent = document.getElementById('input_user').value;
@@ -52,7 +55,9 @@ function chatBot(input) {
 	function respondTo(input) {
 
 		input = input.toLowerCase();
-		
+
+
+
 		if(match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)', input))
 			return "um... hi?";
 		
