@@ -1,29 +1,3 @@
-
-
-
-function send_message() {setTimeout(function(){
-    var div = document.createElement('div');
-    div.textContent = document.getElementById('input_user').value;
-    div.setAttribute('class', 'msg_out');
-    document.getElementById('chat_msg').appendChild(div);
-    }, 100);}
-
-function write_response(){setTimeout(function(){
-    var div = document.createElement('div');
-    alert(chatBot(document.getElementById('input_user').value))
-    div.textContent = chatBot(document.getElementById('input_user').value);
-    div.setAttribute('class', 'msg_in');
-    document.getElementById('chat_msg').appendChild(div)
-    document.getElementById('input_user').value = '';
-    document.getElementById('input_user').value = '';
-    }, 200);
-}
-
-function scrollbottom() {setTimeout(function(){
-    let elmnt=document.getElementById("chat_msg");
-    elmnt.scrollTop=elmnt.scrollHeight;
-}, 300)}
-
 function openchat(){setTimeout(function(){
     var chatbox = document.getElementById("chatbox_support");
     if (chatbox.style.display === "none" || chatbox.style.display === '')
@@ -35,6 +9,31 @@ function closechat(){setTimeout(function(){
     var chatbox = document.getElementById("chatbox_support");
     chatbox.style.display="none";
     }, 100);}
+    
+
+
+function send_message() {setTimeout(function(){
+    var div = document.createElement('div');
+    div.textContent = document.getElementById('input_user').value;
+    div.setAttribute('class', 'msg_in');
+    document.getElementById('chat_msg').appendChild(div);
+    }, 100);}
+
+function write_response(){setTimeout(function(){
+    var div = document.createElement('div');
+    div.textContent = chatBot(document.getElementById('input_user').value);
+    div.setAttribute('class', 'msg_out');
+    document.getElementById('chat_msg').appendChild(div);
+    document.getElementById('input_user').value = '';
+    document.getElementById('input_user').value = '';
+    }, 200);}
+
+function scrollbottom() {setTimeout(function(){
+    let elmnt=document.getElementById("chat_msg");
+    elmnt.scrollTop=elmnt.scrollHeight;
+}, 300)}
+
+
     
 function chatBot(input) {
 
