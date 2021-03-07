@@ -3,6 +3,7 @@ function openchat(){setTimeout(function(){
     if (chatbox.style.display === "none" || chatbox.style.display === '')
     {chatbox.style.display="block";} else{
         chatbox.style.display="none";}
+	
     }, 100);}
 
 function closechat(){setTimeout(function(){
@@ -28,6 +29,7 @@ function write_response(){setTimeout(function(){
     document.getElementById('input_user').value = '';
     }, 200);}
 
+
 function scrollbottom() {setTimeout(function(){
     let elmnt=document.getElementById("chat_msg");
     elmnt.scrollTop=elmnt.scrollHeight;
@@ -51,9 +53,12 @@ function chatBot(input) {
 	 * @param input - input chat string
 	 * @return reply of chat-bot
 	 */
-	function respondTo(input) {
+	
 
+	function respondTo(input) {
+  
 		input = input.toLowerCase();
+		
 
 
 
@@ -120,4 +125,30 @@ window.onload=function(){
 
     });
     }
+
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+		
+		const inc = target / speed;
+		
+		console.log(inc)
+		if(count > target) {
+			counter.innerText = count + inc;
+			setTimeout(updateCount, 1);
+		} else {
+			count.innerText = target;
+		}
+
+	}
+
+	updateCount();
+});
+
+
 

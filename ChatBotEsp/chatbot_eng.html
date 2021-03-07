@@ -7,9 +7,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <script src = "java.js"></script>
         <link rel = "stylesheet" href = "mystyle.css">
-        <script src="jquery-1.7.2.js"></script>
-       
         
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     </head>
     <body>
  
@@ -133,7 +134,23 @@
                 </div>
             </div>
         </div>
+       
+        <div class="counters">
+            <div class="icon"><img src="tick.svg" style="width:50px"></div>
+            <div class="head">Total of</div>
+            <div class="counter">300</div>
+            <div class="head">visits</div>
+        </div>
 
+        <script>
+            $(document).ready(function(){
+                $(".counter").counterUp({
+                    delay: 10, 
+                    time: 1200,
+                })
+            });
+        </script>
+        
     </body>
     
 
