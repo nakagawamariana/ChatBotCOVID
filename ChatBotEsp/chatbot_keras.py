@@ -202,6 +202,7 @@ modelCA.add(Dense(y_arrayCA.shape[1], activation='softmax'))
 #%%
 modelCA.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 modelCA.fit(X_trainCA, y_arrayCA, epochs=200, batch_size=10)
+modelCA.save("my_model_CA")
 
 #%%
 #Create empty lists for our training data 
@@ -249,6 +250,7 @@ X_TRAIN.shape[1]
 
 Y_TRAIN.shape
 
+
 # Neural network
 model = Sequential()
 model.add(Dense(16, input_dim = X_train.shape[1], activation='relu'))
@@ -259,6 +261,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 
 model.fit(X_train, y_array, epochs=200, batch_size=10)
 
+model.save("my_model")
 #%%
 print(colored("Hola, soy Cova.  ", attrs = ["bold"]) , "\U0001F916",
       colored("\n\nMe han creado para intentar ayudarte con todas tus posibles dudas relacionadas con el Covid-19. Estoy encantado/a de hablar contigo y ayudarte en todo lo que pueda.",attrs = ["bold"]),
@@ -298,7 +301,7 @@ while conversation:
     
     #Prediction of the response
     predictions = model.predict_classes(bag_test)
-    probability = model.predict_proba(bag_test)
+    probability = model.predict(bag_test)
     
 
     
@@ -322,7 +325,7 @@ while conversation:
                     
                     #Predictions for Autonomous Community
                     prediction_ca = modelCA.predict_classes(bag_testca)
-                    probability_ca = modelCA.predict_proba(bag_testca)
+                    probability_ca = modelCA.predict(bag_testca)
                     
                     if probability_ca[0][prediction_ca][0] >= 0.25:
                         community = tagsCA[prediction_ca[0]]
@@ -346,9 +349,9 @@ while conversation:
                         bag_testcaq[0] = bag_caq
 
 
-                        #Predictions for Autonomous Community
+                        #Predictions for Autonomous Communityhol
                         prediction_caq = modelCA.predict_classes(bag_testcaq)
-                        probability_caq = modelCA.predict_proba(bag_testcaq)
+                        probability_caq = modelCA.predict(bag_testcaq)
                         if probability_caq[0][prediction_caq][0] >= 0.25:
                             community = tagsCA[prediction_caq[0]]
 
