@@ -199,10 +199,10 @@ background-color: teal;
     display: none;
     position: absolute;
     overflow: hidden;
-    bottom: 120px;
+    bottom: 20px;
     right: 120px;
-    width: 500px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
     background: #FAFAFA 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #d4d4d4;
@@ -430,3 +430,26 @@ background-color: teal;
   }
 
   */
+
+@media (max-width: 768px){
+    #inicio{
+        width:100%;
+    }
+    #listaInicio{
+        font-size: 15px;
+        display: block;
+    }
+    #listaInicio img{
+        width: 15px;
+        height: 15px;
+    }
+    #imageRight{
+        display: none;
+    }
+    .chatbox_support{
+        height: 450px;
+        width: 300px;
+
+    }
+}
+
