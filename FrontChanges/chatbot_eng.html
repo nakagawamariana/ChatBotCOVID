@@ -7,11 +7,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <script src = "java.js"></script>
         <link rel = "stylesheet" href = "mystyle.css">
-        
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     </head>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
     <body>
  
             <!-- Navbar (sit on top) -->
@@ -20,11 +26,11 @@
 
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
-              <a href="#inicio" class="w3-bar-item w3-button">Home</a>
-              <a href="#fuentesInformacion" class="w3-bar-item w3-button">Information Sources</a>
-              <a href="#tecnologia" class="w3-bar-item w3-button">Tecnology</a>
-              <a href="#contacto" class="w3-bar-item w3-button">Contact</a>
-              <a href="index.html" class="w3-bar-item w3-button">Español<img src="Imagen 1.png" style="width: 30px"></a>
+              <a data-scroll href="#inicio" class="w3-bar-item w3-button">Home</a>
+              <a data-scroll href="#fuentesInformacion" class="w3-bar-item w3-button">Information Sources</a>
+              <a data-scroll href="#tecnologia" class="w3-bar-item w3-button">Tecnology</a>
+              <a data-scroll href="#contacto" class="w3-bar-item w3-button">Contact</a>
+              <a data-scroll href="index.html" class="w3-bar-item w3-button">Español<img src="Imagen 1.png" style="width: 30px"></a>
             </div>
           </div>
         </div>
@@ -112,12 +118,12 @@
         
         
         
-            <i class="icon ion-home"></i>
+        <i class="icon ion-home"></i>
         <div class = "chatbox">
             <button class="open_button" onclick="openchat()"></button>
             <div class = "chatbox_support" id="chatbox_support">
                 <div class = "chatbox_header">
-                    <img src="icon@2x.png" class="icon_chat">
+                    <img src="icon.png" class="icon_chat">
                     <div class="circle"></div>
                     <div class="circle_opaque"></div>
                     <p id= "live_chat">Live chat with Cova</p>
@@ -125,12 +131,27 @@
                     <button id="close_chat" onclick="closechat()"></button>
                 </div>
                 <div class = "chatbox_bottom">
-                    <input type="text" class="input_user" id="input_user" placeholder="Escribe tu mensaje">
+                    <input type="text" class="input_user" id="input_user" placeholder="Type your message">
                     <button class="btn"  id="myBtn">
                     </button>
                 </div>
                 <div class="chat_msg" id="chat_msg">
+                    <div class="msg_out">Hi! My name is Cova 🤖<br><br>
 
+                        I have been created to try to help you with all your possible questions related to Covid-19.<br><br>
+                        I am delighted to speak with you and help you in any way I can.<br><br>
+                        
+                        I can give you information about many things!<br><br>
+                        
+                        ✅ What is the coronavirus? 🦠<br>
+                        ✅ Covid phone 📞 <br>
+                        ✅ Symptoms 🤧🌡 <br>
+                        ✅ Contact with positives 🤝⚠ <br>
+                        ✅ Quarantine 🏠 <br>
+                        ✅ Tips to protect yourself from the virus 👏🧼✨ <br><br>
+                        
+                        Come on! Ask me something 😁
+                        </div>
                 </div>
             </div>
         </div>
