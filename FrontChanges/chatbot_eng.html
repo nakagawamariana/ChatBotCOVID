@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name ="viewport" content = "width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <script src = "java.js"></script>
+        <link rel = "stylesheet" href = "mystyle.css">
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    </head>
+    <body>
+ 
+            <!-- Navbar (sit on top) -->
+        <div>
+          <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+              <a href="#inicio" class="w3-bar-item w3-button">Home</a>
+              <a href="#fuentesInformacion" class="w3-bar-item w3-button">Information Sources</a>
+              <a href="#tecnologia" class="w3-bar-item w3-button">Tecnology</a>
+              <a href="#contacto" class="w3-bar-item w3-button">Contact</a>
+              <a href="index.html" class="w3-bar-item w3-button">Español<img src="Imagen 1.png" style="width: 30px"></a>
+            </div>
+          </div>
+        </div>
+        
+        <div id="inicio">
+            <div style="width:85%">
+                <h1>Welcome! 👋</h1>
+                <h2>Do you have questions about Covid-19? Don't worry!</h2>
+                <h3>A team of engineers and doctors from the <a href="https://www.comunidad.madrid/hospital/fuenlabrada/" class="urlStyle">Hospital Universitario de Fuenlabrada</a> has created Cova, an AI chatbot that will try to help you solve your questions.  </h3>
+            
+                <div id="listaInicio">
+                    <ul>
+                        <li><img src="Grupo 6.png">  General Information</li>
+                        <li><img src="Grupo 7.png">  What is coronavirus?</li>
+                        <li><img src="Grupo 8.png">  Transmission of Covid-19 </li>
+                        <li><img src="Grupo 9.png"> Simptoms of Covid-19</li>
+                    </ul>
+    
+                    <ul>
+                        <li><img src="Grupo 10.png"> Contact with positives</li>
+                        <li><img src="Grupo 11.png"> Protective measures against coronavirus</li>
+                        <li><img src="Grupo 15.png"> Quarantine </li>
+                        <li><img src="Grupo 14.png"> Recommendations based on results </li>
+                    </ul>
+    
+                </div>
+                <h3>Click on the icon in the lower right corner <a href="open_button" class="urlStyle">to talk to Cova</a>, everything is ready to start!
+                </h3>
+                <div style="text-align: left;">
+                    <img id="imagenSeccionInicio" src="Componente 12 – 1.png" style="height: 200px;" >
+                </div>
+            </div>
+            
+            <div id=imageRight style="text-align:end; width:5%;">
+                <img src="Grupo 25.png" >
+            </div>
+        </div>
+
+
+
+        <div id="fuentesInformacion">
+            <h1>Information you can trust</h1>
+            <h3>All the information provided has been supervised by a team of physicians. In addition, we have relied on widely recognized sources of information.  </h3>
+            <div id="imagenfuentesInformacion">
+                <img  src="Imagen 2.png" style="height:120px">
+                <img  src="Imagen 3.png" style="height:120px">
+                <img  src="Imagen 4.png" style="height:120px">
+            </div>
+            
+        </div>
+        <img src="Grupo 54.png">
+        <div id="tecnologia">
+            <h1>Technology as a tool against disinformation  </h1>
+            <h3>Cova has been designed to help you by using Artificial Intelligence algorithms.  These algorithms try to predict what kind of information you want to find out by analyzing the question you enter.</h3>
+            <h3>Chatbots have been used by countless companies to try to resolve customer queries and reduce the workload of their employees.</h3>
+            <h3>Over the last few years, hospitals and clinics have been incorporating this technology into their websites and APPs to try to improve patient care.</h3>
+            <h3>No more waiting on the phone, no more searching the internet to find the information you were looking for and no more contradictory messages from different sources. Cova will provide you with the necessary information, supervised by experts, in a single search and in an accessible way.  </h3>
+        </div>
+
+        <div id="contacto">
+            <img src="Grupo 28.png">
+            <div id="contactoForm">
+                <h1>If you have a question, please contact us!  </h1>
+                <form id= "form" action="/my-handling-form-page" method="post">
+                    <ul>
+                        
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_mail">
+                        </li>
+                        <li>
+                            <label for="msg">Your message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                            
+                        </li>
+                        <li class="button">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                    
+                </form>
+            </div>
+            
+        </div>
+        
+        
+        
+            <i class="icon ion-home"></i>
+        <div class = "chatbox">
+            <button class="open_button" onclick="openchat()"></button>
+            <div class = "chatbox_support" id="chatbox_support">
+                <div class = "chatbox_header">
+                    <img src="icon@2x.png" class="icon_chat">
+                    <div class="circle"></div>
+                    <div class="circle_opaque"></div>
+                    <p id= "live_chat">Live chat with Cova</p>
+                    <p id= "ask_chat">Ask anything</p>
+                    <button id="close_chat" onclick="closechat()"></button>
+                </div>
+                <div class = "chatbox_bottom">
+                    <input type="text" class="input_user" id="input_user" placeholder="Escribe tu mensaje">
+                    <button class="btn"  id="myBtn">
+                    </button>
+                </div>
+                <div class="chat_msg" id="chat_msg">
+
+                </div>
+            </div>
+        </div>
+       
+        <div class="counters">
+            <div class="icon"><img src="tick.svg" style="width:50px"></div>
+            <div class="head">Total of</div>
+            <div class="counter">300</div>
+            <div class="head">visits</div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $(".counter").counterUp({
+                    delay: 10, 
+                    time: 1200,
+                })
+            });
+        </script>
+        
+    </body>
+    
+
+    
+    
+
+</html>
+
