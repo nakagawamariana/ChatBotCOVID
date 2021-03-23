@@ -8,7 +8,7 @@ const express = require("express");
 const bodyParser = require('body-parser');
 
 
-//Importamos el vocabulacio
+//Importamos el vocabulario
 //%%Intents
 var vocabulary_intents = fs.readFileSync(path.resolve(__dirname, './Vocabulary/vocabulary_intents.json'));
 var vocabulary_intents = JSON.parse(vocabulary_intents);
@@ -96,7 +96,7 @@ function Chatbot(input) {
                                 phone_number = phone
                             }
                         }
-                        response_tlf = `\n\n El número de teléfono de ${community} es
+                        response_tlf = `<br> El número de teléfono de ${community} es
                         : ${phone_number}`
 
                         var final_msg = output_msg + response_tlf
@@ -105,7 +105,7 @@ function Chatbot(input) {
                         fs.writeFileSync("response.json", data);
 
                     } else {
-                        response_tlf = "\n\n Puedes preguntar por un teléfono covid en específico, pon por ejemplo: teléfono covid de Madrid"
+                        response_tlf = "<br> Puedes preguntar por un teléfono covid en específico, pon por ejemplo: teléfono covid de Madrid"
                         var final_msg = output_msg + response_tlf
                         let response_msg = { "response": final_msg };
                         let data = JSON.stringify(response_msg);
@@ -125,7 +125,7 @@ function Chatbot(input) {
     
 }
 
-//$$SERVER CONFIGURATION$$
+//$$CONFIGURACION DEL SERVIDOR$$
 
 const port = 3002
 
